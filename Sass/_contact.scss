@@ -1,0 +1,128 @@
+.contact{
+    &__container{
+         .contact__head{
+            .contact__text{
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0.20000000298023224px;
+                max-width: 170px;
+                height: auto;
+                color: #23A6F0; 
+            }
+            .contact__title{
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 50px;
+                letter-spacing: 0.20000000298023224px;
+                max-width: 785px;
+                height: auto;
+                color: #252B42; 
+                padding: 10px 0;       
+            }
+            .contact__block{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0.20000000298023224px;
+                max-width: 469px;
+                height: auto;
+                color: #737373;            
+            }
+         }
+        .contact__list{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 80px;
+            .contact__item{
+                .contact__star{
+                    max-width: 160px;
+                    gap: 5px;    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;  
+                    padding: 30px 15px;         
+                    }     
+                    .contact__texts{
+                        display: flex;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        letter-spacing: 0.20000000298023224px;
+                        text-align: center;
+                        height: 120px;
+                        width: 160px;
+                        color: #737373;  
+                        margin-bottom: 30px;             
+                    }
+                    .contact__box{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 5px;
+                        // padding: 20px 10px;
+                        span{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                        }
+                        strong{
+                            font-size: 14px;
+                            font-weight: 700;
+                            line-height: 24px;
+                            letter-spacing: 0.20000000298023224px;
+                            width: 120px;
+                            color: #23A6F0;
+                        }
+                        b{
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 16px;
+                        letter-spacing: 0.20000000298023224px;
+                        width: 56px;
+                        color: #252B42;
+                        margin-right: 50px;
+                    }
+                }
+            } 
+        }
+    }
+}
+@media (max-width:1110px){
+.contact{
+    &__container{
+        .contact__head{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            }
+        }
+    }
+}
+@media (max-width:806px){
+    .contact{
+        &__container{
+             .contact__list{
+                justify-content: center;
+             }
+            }
+        }
+}
+@media (max-width:500px){
+    .contact{
+        &__container{
+             .contact__head{
+                .contact__title{
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+            }
+        }
+     }
+}
